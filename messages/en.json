@@ -1,0 +1,53 @@
+{
+  "hero_section": {
+    "our_risk": "Our risk",
+    "your_profit": "Your profit",
+    "investing": "Investing",
+    "ambitions_desc": "To realize your trading dreams",
+    "industry_leading": "With the best trading conditions in the industry",
+    "options": {
+      "manage": "Capital management up to $400,000",
+      "lightning_fast": "Instant and fast settlement",
+      "profit_split": "Profit sharing up to 100%",
+      "weekly_payout": "Weekly trader salary payouts"
+    }
+  },
+  "navigations": {
+    "home_page": "Home",
+    "coching": "Coaching",
+    "incoming_models": "Income Models",
+    "prices": "Pricing",
+    "about": "About PropEx"
+  },
+  "benefits": {
+    "our_benefit": "Our Benefits",
+    "trade_salary": "Trader Salary",
+    "trade_salary_desc": "By working with our trading team, you earn based on your performance. This salary can be a percentage of your trade profits — the better your performance, the higher your income.",
+    "fix_income": "Fixed Monthly Income Fund",
+    "fix_income_desc": "This fund is designed to provide stable and secure income. You can receive a fixed monthly amount from investment profits or financial activities of the company without having to trade yourself.",
+    "shareholding": "PropEx Shareholding",
+    "shareholding_desc": "By purchasing shares of PropEx, you become a shareholder and share in the company's profits and losses. This allows you to benefit from the company's growth and success and participate in key decisions.",
+    "coaching": "Professional Coaching",
+    "coaching_desc": "By leveraging the experience and knowledge of professional coaches, you can improve your trading skills and achieve greater success. This coaching includes market analysis, trading strategies, and risk management.",
+    "social_insurance": "Social Insurance",
+    "social_insurance_desc": "With social insurance, you can benefit from financial and social support when needed. This includes health coverage, retirement plans, and other services that help you stay secure during challenging times."
+  },
+  "coaching": {
+    "title": "Coaching",
+    "desc": "By leveraging the experience and knowledge of professional coaches, you can improve your trading skills and achieve greater success. This coaching includes market analysis, trading strategies, and risk management.",
+    "benefits": {
+      "basic_start_account": "Fundamentals & Account Setup",
+      "basic_start_account_description": "In this phase, you’ll get familiar with the basics of trading and set up your trading account. It includes introductory training on markets, trading tools, and how to use trading platforms.",
+      "psychology": "Trading Psychology",
+      "psychology_description": "This section introduces the psychological aspects of trading. You'll learn how to manage emotions, control stress, and make decisions under pressure — all essential to trading success.",
+      "capital_management": "Capital Management & Expert Guidance",
+      "capital_management_description": "Here, you'll learn capital management principles and receive expert guidance on allocation, risk control, and profit optimization — helping you enhance your trading strategy.",
+      "analyse_tecknical": "Technical Analysis & Strategy Optimization",
+      "analyse_tecknical_description": "You’ll join a community of professional traders to share technical analyses, strategies, and experiences. This peer support helps accelerate your growth as a trader."
+    }
+  },
+  "navbar": {
+    "get_start": "Get Started",
+    "signin": "Login / Sign Up"
+  }
+}

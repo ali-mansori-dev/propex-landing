@@ -15,7 +15,7 @@ import infinite from "@/public/benefits/infinite.png";
 import { AnimationButton } from "@/components/animation-button";
 import InvestorCard from "./investorCard";
 import Link from "next/link";
-// import { ScrollProgress } from "@/components/ui/ScrollAnimation";
+import { ScrollProgress } from "@/components/ui/ScrollAnimation";
 
 const Herosection = () => {
   const t = useTranslations();
@@ -76,7 +76,7 @@ const Herosection = () => {
       dir="rtl"
       className="w-full flex flex-col bg-[#070F25] relative overflow-hidden h-[99vh] min-h-[650px] max-h-[800px] lg:min-h-[800px] lg:max-h-[850px] 3xl:h-[85vh]"
     >
-      {/* <ScrollProgress /> */}
+      <ScrollProgress />
       <div className="absolute top-0 left-0 bottom-0 right-0 inset-0 z-[5]">
         <PlanetScene />
         <AnimationBG />

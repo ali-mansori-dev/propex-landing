@@ -13,7 +13,7 @@ const Steps = () => {
   const t = useTranslations("steps");
 
   return (
-    <section className={`w-full py-8 relative`}>
+    <section className={`w-full py-20 relative`}>
       <Container className="flex !flex-col items-center justify-center gap-4">
         <h1 className="text-2xl lg:text-4xl font-yekan-bold mb-16 text-center">
           {t("title")}

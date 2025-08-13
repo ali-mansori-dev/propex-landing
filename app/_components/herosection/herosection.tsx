@@ -7,75 +7,29 @@ import VerticalInfiniteSlider from "./benefitsnaviagation";
 import PlanetScene from "@/components/PlanetScene";
 import AnimationBG from "./animationBG";
 import TrustPilot from "./trustPilot";
-import Image from "next/image";
-import Profit90 from "@/public/benefits/profit.png";
-import clock from "@/public/benefits/clock.png";
-import increase from "@/public/benefits/increase.png";
-import infinite from "@/public/benefits/infinite.png";
 import { AnimationButton } from "@/components/animation-button";
 import InvestorCard from "./investorCard";
 import Link from "next/link";
 import { ScrollProgress } from "@/components/ui/ScrollAnimation";
+import { Meteors } from "@/components/ui/Metors";
+import { options } from "./options";
 
 const Herosection = () => {
   const t = useTranslations();
 
   const panel_base_api = "https://panel.propex.fund/";
 
-  const options = [
-    {
-      icon: (
-        <Image
-          src={Profit90}
-          alt="Profit90%"
-          className="w-[30px] lg:w-[40px] h-[30px] lg:h-[40px] object-cover"
-        />
-      ),
-      title: "تا 90%",
-      subtitle: "تقسیم سود",
-    },
-    {
-      icon: (
-        <Image
-          src={clock}
-          alt="Profit90%"
-          className="w-[21px] lg:w-[30px] h-[30px] lg:h-[40px] object-cover"
-        />
-      ),
-      subtitle: "پرداخت سود",
-      title: "حداکثر 6 ساعت",
-    },
-    {
-      icon: (
-        <Image
-          src={increase}
-          alt="Profit90%"
-          className="w-[24px] lg:w-[40px] h-[30px] lg:h-[40px] object-cover"
-        />
-      ),
-      title: "امکان افزایش سرمایه",
-      subtitle: "",
-    },
-    {
-      icon: (
-        <span className="w-[40px] lg:w-[40px] h-[30px] lg:h-[40px] py-1 ">
-          <Image
-            src={infinite}
-            alt="Profit90%"
-            className="w-[40px] lg:w-[40px] h-[20px] lg:h-[20px] object-cover"
-          />
-        </span>
-      ),
-      title: "نامحدود",
-      subtitle: "روز های معاملاتی",
-    },
-  ];
+ 
 
   return (
     <section
       dir="rtl"
       className="w-full flex flex-col bg-[#070F25] relative overflow-hidden h-[99vh] min-h-[650px] max-h-[800px] lg:min-h-[800px] lg:max-h-[850px] 3xl:h-[85vh]"
     >
+      <div className="ltr">
+        <Meteors number={4} />
+      </div>
+
       <ScrollProgress />
       <div className="absolute top-0 left-0 bottom-0 right-0 inset-0 z-[5]">
         <PlanetScene />

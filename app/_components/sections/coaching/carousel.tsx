@@ -5,9 +5,8 @@ import fainacialmanage from "@/public/images/fainacialmanage.png";
 import technical from "@/public/images/technical.png";
 import basics from "@/public/images/basics.png";
 import psycology from "@/public/images/psycology.png";
-import CoachingCard from "../../cards/coachingCard";
+import CoachingCard from "../../cards/CoachingCards";
 import { useTranslations } from "next-intl";
-import { ChevronLeft } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -48,16 +47,8 @@ const Carousel = () => {
     <div className="w-full">
       <Swiper
         modules={[Navigation]}
-        slidesPerView={1}
+        slidesPerView={"auto"}
         spaceBetween={20}
-        breakpoints={{
-          640: {
-            slidesPerView: 1, // 1 slide on small screens
-          },
-          1024: {
-            slidesPerView: 4, // 3 slides on large screens
-          },
-        }}
         navigation={{
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
@@ -65,7 +56,7 @@ const Carousel = () => {
         className="mySwiper !py-[50px] !select-none"
       >
         {steps.map((step, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="lg:!w-[23%] !w-[85%]">
             <CoachingCard
               title={step.title!}
               description={step.description!}
@@ -75,20 +66,6 @@ const Carousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="lg:hidden w-full flex justify-center items-center gap-3 mt-4">
-        <button
-          className="custom-prev border border-white/60 hover:bg-white/20 p-2 rounded-xl shadow transition"
-          aria-label="previus"
-        >
-          <ChevronLeft className="w-6 h-6  rotate-180" />
-        </button>
-        <button
-          className="custom-next border border-white/60 hover:bg-white/20 p-2 rounded-xl shadow transition"
-          aria-label="next"
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-      </div>
     </div>
   );
 };

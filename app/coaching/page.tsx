@@ -15,7 +15,7 @@ import management from "@/public/coaching/management.png";
 import psychology from "@/public/coaching/psychology.png";
 import review from "@/public/coaching/review.png";
 import { SampleVideo } from "./sample_video";
-import UserCard from "../_components/cards/userCard";
+import UserCard from "../_components/cards/UserCards";
 
 export const metadata: Metadata = {
   title: "پراپکس | کوچینگ",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Benefits from "../_components/sections/benefits";
 import { Metadata } from "next";
-import UserCard from "../_components/cards/userCard";
+import UserCard from "../_components/cards/UserCards";
 // import PropexSlogan from "../_components/sections/PropexSlogan";
 
 export const metadata: Metadata = {
@@ -45,7 +45,7 @@ const AboutUs = () => {
           <Container className="py-8 h-full flex flex-col items-center">
             <div className="w-full h-full flex flex-col items-center justify-center text-center">
               <h1 className="text-2xl lg:text-5xl font-bold mb-8 font-yekan-black">
-                {t("title")}{' '}
+                {t("title")}{" "}
                 <span className="text-teal-500">{t("primary_title")}</span>
               </h1>
               <h6 className="text-lg lg:text-2xl font-yekan-bold text-gray-300 mb-12">
@@ -61,9 +61,7 @@ const AboutUs = () => {
             alt="PatternTop"
             className="absolute top-0 left-0 right-0 z-0 w-full h-full object-cover opacity-55"
           />
-          <div
-            className="bgCustomer top-[-1%] end-1/2 -translate-x-1/2 z-0 opacity-70"
-          ></div>
+          <div className="bgCustomer top-[-1%] end-1/2 -translate-x-1/2 z-0 opacity-70"></div>
         </section>
         <div className="h-36"></div>
         <div className="text-center text-3xl mb-4 font-yekan-bold">
@@ -72,7 +70,9 @@ const AboutUs = () => {
         <div className="h-6"></div>
         <Benefits />
         <div className="h-36"></div>
-        <div className="w-full text-start text-4xl mb-4 font-yekan-bold">تیم ما</div>
+        <div className="w-full text-start text-4xl mb-4 font-yekan-bold">
+          تیم ما
+        </div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 justify-around items-center mt-12">
           {clients.map((client, index) => (
             <UserCard key={index} {...client} />

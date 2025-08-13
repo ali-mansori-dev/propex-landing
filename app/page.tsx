@@ -5,7 +5,7 @@ import Challenges from "./_components/sections/challenges/index";
 import UserVideos from "./_components/sections/userVideos";
 import Steps from "./_components/sections/steps/steps";
 import PropexSlogan from "./_components/sections/PropexSlogan";
-import Blogs from "./_components/sections/blogs/blogs";
+import Blogs from "./_components/sections/blogs/BlogsSection";
 import Trust from "./_components/sections/trust";
 import IntroPrapex from "./_components/sections/introPrapex";
 

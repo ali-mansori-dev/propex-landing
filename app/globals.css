@@ -3,18 +3,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @font-face {
   font-family: "Yekan Bakh";
-  src: url("../public/fonts/YekanBakh-FA/woff2/YekanBakh-Regular.woff2") format("woff2"),
-    url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Regular.woff") format("woff");
+  src: url("../public/fonts/YekanBakh-FA/woff2/YekanBakh-Regular.woff2")
+      format("woff2"),
+    url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Regular.woff")
+      format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Yekan Bakh Bold";
-  src: url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Bold.woff") format("woff2"),
+  src: url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Bold.woff")
+      format("woff2"),
     url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Bold.woff") format("woff");
   font-weight: 900;
   font-style: normal;
@@ -22,7 +24,8 @@
 }
 @font-face {
   font-family: "Yekan Bakh Black";
-  src: url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Black.woff") format("woff2"),
+  src: url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Black.woff")
+      format("woff2"),
     url("../public/fonts/YekanBakh-FA/woff/YekanBakh-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
@@ -38,8 +41,8 @@
     sans-serif;
   font-weight: 900;
 }
-.font-poppin{
-  font-family: 'Poppin, Courier New', Courier, monospace;
+.font-poppin {
+  font-family: "Poppin, Courier New", Courier, monospace;
 }
 * {
   box-sizing: border-box !important;
@@ -218,10 +221,10 @@ body {
   }
 }
 
-.float-animation-top{
+.float-animation-top {
   animation: float-full-top 7s ease-in-out infinite;
 }
-.float-animation-bottom{
+.float-animation-bottom {
   animation: float-full-bottom 7s ease-in-out infinite;
 }
 
@@ -256,7 +259,6 @@ body {
     }
   }
 }
-
 
 .bgCustomer {
   position: absolute;
@@ -355,9 +357,10 @@ body {
     left: 120%;
   }
 }
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 16px !important;
-    color:gray;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+  color: gray;
 }
 .skew-line {
   position: relative;
@@ -379,7 +382,8 @@ body {
 @theme inline {
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
- 
+  --animate-meteor: meteor 5s linear infinite;
+
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -394,6 +398,19 @@ body {
     }
     to {
       transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes meteor {
+    0% {
+      transform: rotate(var(--angle)) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(var(--angle)) translateX(-500px);
+      opacity: 0;
     }
   }
 }

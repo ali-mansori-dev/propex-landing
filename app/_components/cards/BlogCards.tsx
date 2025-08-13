@@ -21,13 +21,16 @@ export default function BlogCard({
   description,
 }: BlogType) {
   return (
-    <Card className="overflow-hidden transition-shadow hover:shadow-lg shadow-none !pt-0 !border-0 !rounded-none">
-      <AspectRatio ratio={16 / 10}>
+    <Card className="overflow-hidden transition-shadow hover:shadow-lg shadow-none !pt-0 !border-0 !rounded-none group">
+      <AspectRatio
+        ratio={16 / 10}
+        className="overflow-hidden h-[195px] rounded-2xl"
+      >
         <img
           src={image}
           alt={title}
           // fill
-          className="object-cover rounded-2xl"
+          className="object-cover group-hover:scale-125 transition transition-3s"
         />
       </AspectRatio>
       <CardHeader className="!p-0">

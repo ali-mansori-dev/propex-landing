@@ -10,7 +10,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { BlogType } from "../sections/blogs/type";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { Calendar } from "lucide-react";
 
 export default function BlogCard({
@@ -23,10 +23,10 @@ export default function BlogCard({
   return (
     <Card className="overflow-hidden transition-shadow hover:shadow-lg shadow-none !pt-0 !border-0 !rounded-none">
       <AspectRatio ratio={16 / 10}>
-        <Image
+        <img
           src={image}
           alt={title}
-          fill
+          // fill
           className="object-cover rounded-2xl"
         />
       </AspectRatio>
